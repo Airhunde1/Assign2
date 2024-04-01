@@ -1,5 +1,5 @@
 steps:
-  # Build the Docker image
+  # Build the Docker image as below
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'us-east1-docker.pkg.dev/quixotic-prism-412316/assignment2/myflask_app:${COMMIT_SHA}', '.']
   # Push the Docker image to the artifact registry
